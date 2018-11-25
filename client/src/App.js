@@ -10,6 +10,10 @@ import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Form from './Form'
+// require enzyme
+const Enzyme = require('enzyme');
+const EnzymeAdapter = require('enzyme-adapter-react-16');
+Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 const TodosQuery = gql`
   {
